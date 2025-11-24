@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="337.0" prefWidth="482.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhojavafx.Atividade9ContaLuzController">
+
+    <children>
+      <VBox prefHeight="107.0" prefWidth="442.0">
+         <children>
+              <TextField fx:id="campoNome" promptText="Nome do cliente" style="-fx-border-color: #941E10; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #CFC2C2;" />
+              <TextField fx:id="campoKwh" promptText="kWh consumidos" style="-fx-border-color: #941E10; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #CFC2C2;">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+
+        <ComboBox fx:id="comboTipo" promptText="Tipo de residência" style="-fx-background-color: #941E10; -fx-background-radius: 20; -fx-text-fill: white;">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Residencial" />
+                    <String fx:value="Comercial" />
+                    <String fx:value="Industrial" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label fx:id="rotuloResultado" />
+
+        <Button onAction="#calcular" style="-fx-background-color: #941E10; -fx-background-radius: 20; -fx-text-fill: white;" text="Calcular" />
+
+        <Button onAction="#voltar" style="-fx-background-color: #941E10; -fx-background-radius: 20; -fx-text-fill: white;" text="Voltar" />
+    </children>
+</VBox>

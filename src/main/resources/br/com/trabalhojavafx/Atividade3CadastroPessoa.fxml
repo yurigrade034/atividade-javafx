@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="319.0" prefWidth="361.0" spacing="10" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhojavafx.Atividade3CadastroPessoaController">
+
+    <children>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="362.0">
+         <children>
+              <TextField fx:id="campoNome" alignment="CENTER" promptText="Nome" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;" />
+              <TextField fx:id="campoIdade" alignment="CENTER" promptText="Idade" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="362.0">
+         <children>
+      
+              <ComboBox fx:id="comboSexo" prefHeight="26.0" prefWidth="143.0" promptText="Sexo" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Masculino" />
+                          <String fx:value="Feminino" />
+                      </FXCollections>
+                  </items>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+              </ComboBox>
+      
+              <CheckBox fx:id="chkEsportes" text="Gosta de praticar esportes" textFill="#b71d1d" />
+         </children>
+      </HBox>
+
+              <Button onAction="#analisar" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;" text="Analisar" />
+
+        <Label fx:id="rotuloResumo" />
+        <Label fx:id="rotuloObservacao" />
+
+        <Button onAction="#voltar" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;" text="Voltar" />
+    </children>
+</VBox>

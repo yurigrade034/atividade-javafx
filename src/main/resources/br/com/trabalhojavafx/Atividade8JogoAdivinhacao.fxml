@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="278.0" prefWidth="359.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhojavafx.Atividade8JogoAdivinhacaoController">
+
+    <children>
+      <VBox alignment="CENTER" prefHeight="79.0" prefWidth="359.0">
+         <children>
+              <TextField fx:id="campoNumero" promptText="Digite um número de 1 a 10" style="-fx-text-fill: white; -fx-border-color: #941E10; -fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #CFC2C2;" />
+      
+              <Label fx:id="rotuloResultado">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+
+        <Button onAction="#verificar" style="-fx-background-color: #941E10; -fx-background-radius: 20;" text="Verificar" textFill="WHITE" />
+        <Button onAction="#tentarNovamente" style="-fx-background-color: #941E10; -fx-background-radius: 20;" text="Tentar novamente" textFill="WHITE" />
+
+        <Button onAction="#voltar" style="-fx-background-color: #941E10; -fx-background-radius: 20;" text="Voltar" textFill="WHITE" />
+    </children>
+</VBox>

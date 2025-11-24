@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox alignment="CENTER" prefHeight="451.0" prefWidth="323.0" spacing="10" style="-fx-background-color: #D9D5D4;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhojavafx.MainMenuController">
+
+    <children>
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Trabalho JavaFX - Atividades">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8842105269432068" green="0.04912280663847923" blue="0.04912280663847923" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+        <Label text="Selecione uma atividade:">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8842105269432068" green="0.04912280663847923" blue="0.04912280663847923" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade1" prefHeight="25.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 1 - Calculadora" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade2" prefHeight="25.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 2 - Conversor de Temperatura" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade3" prefHeight="25.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 3 - Cadastro de Pessoa" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade4" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 4 - Média Escolar" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade5" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 5 - Cadastro de Alunos (Tabela)" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade6" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 6 - Montagem de Lanche" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade7" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 7 - Semáforo" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade8" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 8 - Jogo de Adivinhação" textAlignment="CENTER" textFill="WHITE" />
+        <Button contentDisplay="CENTER" onAction="#abrirAtividade9" prefHeight="26.0" prefWidth="240.0" style="-fx-border-color: #941E10; -fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #363332;" text="Atividade 9 - Conta de Luz" textAlignment="CENTER" textFill="WHITE" />
+    </children>
+</VBox>

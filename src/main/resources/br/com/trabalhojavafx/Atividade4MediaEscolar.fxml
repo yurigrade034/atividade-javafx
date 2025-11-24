@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="362.0" prefWidth="445.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.trabalhojavafx.Atividade4MediaEscolarController">
+
+    <children>
+      <VBox alignment="TOP_CENTER" prefHeight="144.0" prefWidth="147.0">
+         <children>
+              <TextField fx:id="campoNome" alignment="CENTER" prefWidth="210.0" promptText="Nome do aluno" style="-fx-border-color: #941E10; -fx-text-fill: white; -fx-background-color: #941E10; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+              <TextField fx:id="campoNota1" alignment="CENTER" promptText="Nota 1" style="-fx-border-color: #941E10; -fx-text-fill: white; -fx-background-color: #941E10; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+              <TextField fx:id="campoNota2" alignment="CENTER" promptText="Nota 2" style="-fx-border-color: #941E10; -fx-text-fill: white; -fx-background-color: #941E10; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+              <TextField fx:id="campoNota3" alignment="CENTER" promptText="Nota 3" style="-fx-border-color: #941E10; -fx-text-fill: white; -fx-background-color: #941E10; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+      </VBox>
+
+        <Button onAction="#calcularMedia" style="-fx-background-color: #941E10; -fx-background-radius: 20;" text="Calcular Média" textFill="WHITE" />
+
+        <Label fx:id="rotuloResultado" />
+
+        <Button onAction="#voltar" style="-fx-background-color: #941E10; -fx-background-radius: 20;" text="Voltar" textFill="WHITE" />
+    </children>
+</VBox>
