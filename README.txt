@@ -1,4 +1,4 @@
-📘 Como executar o projeto JavaFX (sem HelloController)
+📘 Como executar o projeto JavaFX
 
 🛠️ Importando o projeto
 Vá em File > New > Project from Existing Sources...
