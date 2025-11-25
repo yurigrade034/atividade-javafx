@@ -78,97 +78,104 @@
                 </FXCollections>
             </items>
         </ComboBox>
-      <VBox prefHeight="102.0" prefWidth="203.0">
+      <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-      
-              <Label text="Tipo de carne:">
-               <textFill>
-                  <LinearGradient endX="0.1941287878787879" endY="0.559659090909091" startY="0.2272727272727273">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
+            <HBox prefHeight="100.0" prefWidth="169.0">
+               <children>
+                  <VBox prefHeight="102.0" prefWidth="203.0">
+                     <children>
+
+                          <Label text="Tipo de carne:">
+                           <textFill>
+                              <LinearGradient endX="0.1941287878787879" endY="0.559659090909091" startY="0.2272727272727273">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                          <RadioButton fx:id="rbBovina" selected="true" style="-fx-text-fill: #820909;" text="Bovina">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="grupoCarne" />
+                           </toggleGroup>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </RadioButton>
+                          <RadioButton fx:id="rbFrango" style="-fx-text-fill: #820909;" text="Frango" toggleGroup="$grupoCarne">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </RadioButton>
+                          <RadioButton fx:id="rbSoja" style="-fx-text-fill: #820909;" text="Soja" toggleGroup="$grupoCarne">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </RadioButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="121.0" prefWidth="186.0">
+               <children>
+
+                    <Label text="Adicionais:">
+                     <textFill>
+                        <LinearGradient endX="0.1941287878787879" endY="0.559659090909091" startY="0.2272727272727273">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                    <CheckBox fx:id="chkQueijo" style="-fx-text-fill: #820909;" text="Queijo">
+                     <padding>
+                        <Insets bottom="1.0" top="5.0" />
+                     </padding>
+                  </CheckBox>
+                    <CheckBox fx:id="chkBacon" style="-fx-text-fill: #820909;" text="Bacon">
+                     <padding>
+                        <Insets bottom="1.0" top="5.0" />
+                     </padding>
+                  </CheckBox>
+                    <CheckBox fx:id="chkSalada" style="-fx-text-fill: #820909;" text="Salada">
+                     <padding>
+                        <Insets bottom="1.0" top="5.0" />
+                     </padding>
+                  </CheckBox>
+                    <CheckBox fx:id="chkMolho" style="-fx-text-fill: #820909;" text="Molho">
+                     <padding>
+                        <Insets bottom="1.0" top="5.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
                <padding>
                   <Insets top="5.0" />
                </padding>
-            </Label>
-              <RadioButton fx:id="rbBovina" selected="true" style="-fx-text-fill: #820909;" text="Bovina">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoCarne" />
-               </toggleGroup>
-               <padding>
-                  <Insets top="5.0" />
-               </padding>
-            </RadioButton>
-              <RadioButton fx:id="rbFrango" style="-fx-text-fill: #820909;" text="Frango" toggleGroup="$grupoCarne">
-               <padding>
-                  <Insets top="5.0" />
-               </padding></RadioButton>
-              <RadioButton fx:id="rbSoja" style="-fx-text-fill: #820909;" text="Soja" toggleGroup="$grupoCarne">
-               <padding>
-                  <Insets top="5.0" />
-               </padding></RadioButton>
+            </VBox>
          </children>
-      </VBox>
-      <VBox prefHeight="111.0" prefWidth="339.0">
-         <children>
-      
-              <Label text="Adicionais:">
-               <textFill>
-                  <LinearGradient endX="0.1941287878787879" endY="0.559659090909091" startY="0.2272727272727273">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-               <padding>
-                  <Insets bottom="1.0" top="5.0" />
-               </padding>
-            </Label>
-              <CheckBox fx:id="chkQueijo" style="-fx-text-fill: #820909;" text="Queijo">
-               <padding>
-                  <Insets bottom="1.0" top="5.0" />
-               </padding>
-            </CheckBox>
-              <CheckBox fx:id="chkBacon" style="-fx-text-fill: #820909;" text="Bacon">
-               <padding>
-                  <Insets bottom="1.0" top="5.0" />
-               </padding>
-            </CheckBox>
-              <CheckBox fx:id="chkSalada" style="-fx-text-fill: #820909;" text="Salada">
-               <padding>
-                  <Insets bottom="1.0" top="5.0" />
-               </padding>
-            </CheckBox>
-              <CheckBox fx:id="chkMolho" style="-fx-text-fill: #820909;" text="Molho">
-               <padding>
-                  <Insets bottom="1.0" top="5.0" />
-               </padding>
-            </CheckBox>
-         </children>
-         <padding>
-            <Insets top="5.0" />
-         </padding>
-      </VBox>
+      </HBox>
 
         <Button onAction="#gerarPedido" style="-fx-background-radius: 20; -fx-background-color: #941E10; -fx-text-fill: white;" text="Gerar Pedido">
          <VBox.margin>
