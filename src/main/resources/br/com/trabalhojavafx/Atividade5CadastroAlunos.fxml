@@ -52,11 +52,11 @@
             </children>
         </HBox>
 
-        <TableView fx:id="tabelaAlunos" prefHeight="256.0" prefWidth="349.0" style="-fx-text-fill: white;">
+        <TableView fx:id="tabelaAlunos" prefHeight="256.0" prefWidth="349.0" style="-fx-text-fill: white; -fx-background-color: white;">
             <columns>
-                <TableColumn fx:id="colunaNome" text="Nome" />
-                <TableColumn fx:id="colunaIdade" text="Idade" />
-                <TableColumn fx:id="colunaCurso" text="Curso" />
+                <TableColumn fx:id="colunaNome" style="-fx-background-color: #941E10;" text="Nome" />
+                <TableColumn fx:id="colunaIdade" style="-fx-background-color: white;" text="Idade" />
+                <TableColumn fx:id="colunaCurso" style="-fx-background-color: #941E10;" text="Curso" />
             </columns>
          <opaqueInsets>
             <Insets />

@@ -20,8 +20,8 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="43.0" prefWidth="362.0">
          <children>
-      
-              <ComboBox fx:id="comboSexo" prefHeight="26.0" prefWidth="143.0" promptText="Sexo" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-background-radius: 20;">
+
+              <ComboBox fx:id="comboSexo" prefHeight="26.0" prefWidth="143.0" promptText="Sexo" style="-fx-background-color: #941E10; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-background-radius: 20;">
                   <items>
                       <FXCollections fx:factory="observableArrayList">
                           <String fx:value="Masculino" />
@@ -32,7 +32,7 @@
                   <Insets right="10.0" />
                </HBox.margin>
               </ComboBox>
-      
+
               <CheckBox fx:id="chkEsportes" text="Gosta de praticar esportes" textFill="#b71d1d" />
          </children>
       </HBox>

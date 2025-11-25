@@ -25,7 +25,7 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
         Parent raiz = loader.load();
         cenaMenu = new Scene(raiz, 400, 420);
-        palcoPrincipal.setScene(cenaMenu);
+                palcoPrincipal.setScene(cenaMenu);
     }
 
     public static Stage getPalcoPrincipal() {
